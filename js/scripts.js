@@ -60,16 +60,15 @@ editBtn.addEventListener("click", e => {
 
 	editInput.addEventListener("keydown", e => {
 		if(e.keyCode == 13){
-			editBtn.parentNode.removeChild(editInput);
-			let newToDoLi = document.createElement("li");
-			newToDoLi.textContent = (editInput.value);
-			toDoLi.style.display = (newToDoLi);
+			toDoLi.textContent = (`${editInput.value} `);
+			editInput.style.display = "none";
+			addLiEditBtns(toDoLi);
 		};
 	});
 });
 
 //when done button is clicked
-doneBtn.addEventListener("submit", e => {
+doneBtn.addEventListener("click", e => {
 	doneBtn.parentNode.classList.add("strikethrough");
 });
 
@@ -79,6 +78,6 @@ deleteBtn.addEventListener("click", e => {
 	if(deleteAlert === true){
 		deleteBtn.parentNode.remove();
 	} else {
-		console.log("hhhh");
+		console.log("canceled");
 	};
 });

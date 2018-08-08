@@ -1,33 +1,68 @@
+/* font/text styles */
+h1, h2 {
+	font-family: 'Lato', sans-serif;
+}
+
+li, button, textarea {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.strikethrough {
+	text-decoration: line-through;
+}
+
+/* header & body styles */
+
+body {
+	background-color: #e3e7e8;
+}
+
+/* button styles */
 .add-todo-btn {
 	border-style: none;
-	background-color: lightblue;
+	background-color: #add8e6;
 	color: #fff;
 	font-weight: 700;
 	margin-bottom: 22px;
 }
 
-.to-do-input {
-
+.add-todo-btn:hover {
+	background-color:#66a5b9;
+	color: #fff;
 }
 
 .edit-btn {
 	border-style: none;
-	background-color: turquoise;
+	background-color: #40e0d0;
+	color: #fff;
+	margin-right: 3px;
+}
+
+.edit-btn:hover {
+	background-color: #20abab;
 	color: #fff;
 }
 
 .done-btn {
 	border-style: none;
-	background-color: lightgreen;
+	background-color: #90ee90;
+	color: #fff;
+	margin-right: 3px;
+}
+
+.done-btn:hover {
+	background-color: #51a551;
 	color: #fff;
 }
 
 .delete-btn {
 	border-style: none;
-	background-color: pink;
+	background-color: #ffc0cb;
 	color: #fff;
+	margin-right: 3px;
 }
 
-.strikethrough {
-	text-decoration: line-through;
+.delete-btn:hover {
+	background-color: #d4818f;
+	color: #fff;
 }
