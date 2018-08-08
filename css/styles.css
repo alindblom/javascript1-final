@@ -3,7 +3,7 @@ h1, h2 {
 	font-family: 'Lato', sans-serif;
 }
 
-li, button, textarea {
+li, button, textarea, p {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -11,10 +11,25 @@ li, button, textarea {
 	text-decoration: line-through;
 }
 
+.margin-top {
+	margin-top: 5px;
+}
+
 /* header & body styles */
 
 body {
 	background-color: #e3e7e8;
+}
+
+/* text area styles */
+.text-area-title {
+	text-decoration: underline;
+	font-size: 18px;
+}
+
+/* todo lists styles */
+.to-do-list, .done-list {
+	background-color: #eee;
 }
 
 /* button styles */
