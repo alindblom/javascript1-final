@@ -1,0 +1,33 @@
+.add-todo-btn {
+	border-style: none;
+	background-color: lightblue;
+	color: #fff;
+	font-weight: 700;
+	margin-bottom: 22px;
+}
+
+.to-do-input {
+
+}
+
+.edit-btn {
+	border-style: none;
+	background-color: turquoise;
+	color: #fff;
+}
+
+.done-btn {
+	border-style: none;
+	background-color: lightgreen;
+	color: #fff;
+}
+
+.delete-btn {
+	border-style: none;
+	background-color: pink;
+	color: #fff;
+}
+
+.strikethrough {
+	text-decoration: line-through;
+}

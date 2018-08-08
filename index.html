@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>To-Do List</title>
+</head>
+<body>
+	<header>
+		<h1 class="title text-center">To Do List</h1>
+	</header>
+	<main>
+		<secion class="input-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-2">
+						<form action="" name="toDo" method="get">
+							<textarea name="to-do-input" class="to-do-input" id="toDoInput" cols="30" rows="5"></textarea>
+							<button type="submit" class="add-todo-btn btn btn-default" id="addToDoBtn">Add To Do</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</secion>
+		<div class="lists-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-2">
+						<h2 class="list-titles">TO DO</h2>
+						<ul class="to-do-list" id="toDoList"></ul>
+					</div>
+					<div class="col-md-4 col-md-offset-2">
+						<h2 class="list-titles">DONE</h2>
+						<ul class="done-list" id="doneList"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+
+	</footer>
+	<script src="js/scripts.js" charset="utf-8"></script>
+</body>
+</html>
