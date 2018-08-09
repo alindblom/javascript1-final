@@ -12,16 +12,16 @@
 </head>
 <body>
 	<header>
-		<h1 class="title text-center">TO DO LIST</h1>
+		<h1 class="title text-center">TO DO APPLICATION</h1>
 	</header>
-	
+
 	<main>
 		<secion class="input-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-2">
 						<form action="" name="toDoForm" method="get">
-							<p class="text-area-title">What do you need to do?</p>
+							<p class="text-area-title">What do you need to do today?</p>
 							<textarea name="to-do-input" class="to-do-input" id="toDoInput" cols="30" rows="5"></textarea>
 							<button type="submit" class="add-todo-btn btn btn-default" id="addToDoBtn">Add To Do</button>
 						</form>
@@ -33,16 +33,26 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 col-md-offset-2">
-						<h2 class="list-titles">TO DO</h2>
-						<ul class="to-do-list" id="toDoList"></ul>
+						<h2 class="list-titles text-center">TO DO</h2>
+						<ul class="to-do-list center-block" id="toDoList"></ul>
 					</div>
-					<div class="col-md-4 col-md-offset-2">
-						<h2 class="list-titles">DONE</h2>
-						<ul class="done-list" id="doneList"></ul>
+					<div class="col-md-4">
+						<h2 class="list-titles text-center">DONE</h2>
+						<ul class="done-list center-block" id="doneList"></ul>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- <div class="random-todo-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 center-block text-center">
+						<h2 class="random-todo-title">Give me a random todo!</h2>
+						<button class="btn random-btn btn-default" id="randomBtn">RANDOM!</button>
+					</div>
+				</div>
+			</div>
+		</div> -->
 	</main>
 
 	<script src="js/scripts.js" charset="utf-8"></script>

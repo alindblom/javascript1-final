@@ -5,7 +5,9 @@ let toDoList = document.querySelector("#toDoList");
 let doneList = document.querySelector("#doneList");
 let toDoForm = document.forms.toDoForm;
 let toDoLiText;
+let randomToDoBtn = document.querySelector("#randomBtn");
 let toDoArray = [];
+let doneArray = [];
 
 /* this function does the following:
 - defines editBtn, doneBtn, deleteBtn and creates DOM element
@@ -28,7 +30,7 @@ function addLiEditBtns(thisLi){
 
 	//when edit button is clicked
 	editBtn.addEventListener("click", e => {
-		let toDoLiText = editBtn.parentNode.value;
+		toDoLiText = editBtn.parentNode.textContent;
 		let editInput = document.createElement("input");
 		editInput.setAttribute("type", "text");
 		thisLi.appendChild(editInput);
@@ -45,14 +47,18 @@ function addLiEditBtns(thisLi){
 	//when done button is clicked
 	doneBtn.addEventListener("click", e => {
 		doneBtn.parentNode.classList.add("strikethrough");
+		toDoLiText = editBtn.parentNode.textContent;
 		let doneLi = document.createElement("li");
 		doneLi.textContent = (`${toDoLiText} `);
+		//moving todo li over to done list
+		function createDoneLi() {
+			doneArray.push(doneLi.textContent);
+			doneBtn.parentNode.style.display = "none";
+			doneList.appendChild(doneLi);
+			doneLi.appendChild(deleteBtn);
+		};
 		setTimeout(
-			() => {editBtn.parentNode.style.display = "none";},
-			3000
-		);
-		setTimeout(
-			() => {doneList.appendChild(doneLi)},
+			() => {createDoneLi()},
 			3000
 		);
 	});
@@ -91,4 +97,15 @@ toDoForm.addEventListener("submit", e => {
 	toDoForm.reset();
 });
 
-//moving todo li over to done list
+//generating random li -> work in progress!
+// let toDoMin = 0;
+// let toDoMax = toDoArray.length - 1;
+// let randomToDoPTag = document.createElement("p");
+//
+// function randomToDoCalc(min, max){
+// 	return Math.floor(Math.random() * (max - min + 1)) + min;
+// };
+//
+// randomToDoBtn.eventListener("click", e => {
+//
+// });

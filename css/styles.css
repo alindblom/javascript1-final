@@ -5,6 +5,7 @@ h1, h2 {
 
 li, button, textarea, p {
 	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
 }
 
 .strikethrough {
@@ -17,19 +18,28 @@ li, button, textarea, p {
 
 /* header & body styles */
 
+.title {
+	font-size: 40px;
+	text-decoration: underline;
+	margin-bottom: 15px;
+}
+
 body {
-	background-color: #e3e7e8;
+	background: linear-gradient(45deg, #e3e7e8, #b9ccea);
 }
 
 /* text area styles */
 .text-area-title {
 	text-decoration: underline;
-	font-size: 18px;
+	font-size: 16px;
+	margin-top: 10px;
 }
 
 /* todo lists styles */
 .to-do-list, .done-list {
-	background-color: #eee;
+	height: 250px;
+	width: auto;
+	background-color: #fff;
 }
 
 /* button styles */
